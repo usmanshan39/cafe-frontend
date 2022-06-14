@@ -14,7 +14,7 @@ import { FullComponent } from './layouts/full/full.component';
 import { AppHeaderComponent } from './layouts/full/header/header.component';
 import { AppSidebarComponent } from './layouts/full/sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
-import { SugnupComponent } from './sugnup/sugnup.component';
+import { SignupComponent } from './signup/signup.component';
 @NgModule({
   declarations: [	
     AppComponent,
@@ -23,7 +23,7 @@ import { SugnupComponent } from './sugnup/sugnup.component';
     FullComponent,
     AppHeaderComponent,
     AppSidebarComponent,
-    SugnupComponent
+    SignupComponent
    ],
   imports: [
     BrowserModule,
