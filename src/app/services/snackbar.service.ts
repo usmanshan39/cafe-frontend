@@ -14,7 +14,7 @@ export class SnackbarService {
       this.snakbar.open(message, '' , {
         horizontalPosition:'center',
         verticalPosition:'top',
-        duration:2000,
+        duration:3000,
         panelClass:['black-snackbar']
       });
     }
@@ -22,7 +22,7 @@ export class SnackbarService {
       this.snakbar.open(message, '' , {
         horizontalPosition:'center',
         verticalPosition:'top',
-        duration:2000,
+        duration:3000,
         panelClass:['green-snackbar']
       });
     }

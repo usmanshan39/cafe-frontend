@@ -19,4 +19,11 @@ export class UserService {
     });
   }
 
+
+  // forgot password
+
+  forgot(data:any){
+    return this.httpClient.post(this.url+"/user/forgotPassword", data)
+  }
+
 }
