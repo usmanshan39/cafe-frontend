@@ -32,4 +32,11 @@ export class UserService {
     return this.httpClient.post(this.url + "/user/login", data)
   }
 
+
+  // checktoken
+
+  checkToken(){
+    return this.httpClient.get(this.url+"/user/checkToken");
+  }
+
 }
