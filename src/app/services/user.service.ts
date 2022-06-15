@@ -7,14 +7,14 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class UserService {
-  url:any = environment.apiUrl;
+  url: any = environment.apiUrl;
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   // signup
 
-  signup(data:any){
-    return this.httpClient.post(this.url+"/user/signup", data, {
+  signup(data: any) {
+    return this.httpClient.post(this.url + "/user/signup", data, {
       headers: new HttpHeaders().set('Content-Type', "application/json")
     });
   }
@@ -22,8 +22,14 @@ export class UserService {
 
   // forgot password
 
-  forgot(data:any){
-    return this.httpClient.post(this.url+"/user/forgotPassword", data)
+  forgot(data: any) {
+    return this.httpClient.post(this.url + "/user/forgotPassword", data)
+  }
+
+  // login
+
+  login(data: any) {
+    return this.httpClient.post(this.url + "/user/login", data)
   }
 
 }
