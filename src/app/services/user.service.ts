@@ -39,4 +39,10 @@ export class UserService {
     return this.httpClient.get(this.url+"/user/checkToken");
   }
 
+  // change password
+
+  changePassword(data:any){
+    return this.httpClient.post(this.url+"/user/changePassword", data);
+  }
+
 }
