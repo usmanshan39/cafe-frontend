@@ -54,6 +54,7 @@ export class LoginComponent implements OnInit {
       else{
         this.responseMessage = GlobalConstants.genericError;
       }
+      this.btnDisable = false;
       this.snackbarService.openSnackbar(this.responseMessage , GlobalConstants.error);
     })
   }
